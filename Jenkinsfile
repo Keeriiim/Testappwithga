@@ -1,20 +1,33 @@
 pipeline {
     agent any
-    stage {
-     stage("build"){
-      steps{
-          echo 'building the application...'
-      }
-     }
-     stage("test"){
-      steps{
-          echo 'testing the application...'
-      }
-     }
-     stage("deploy"){
-      steps{
-          echo 'deploying the application...'
-      }
-     }
+    
+    stages {
+        stage('Build') {
+            steps {
+                echo 'building the application...'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'testing the application...'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'deploying the application...'
+            }
+        }
+    }
+    
+    post {
+        success {
+            echo 'Successfull'
+        }
+        failure {
+            echo 'Failed'
+        }
+    }
 }
-}
+
