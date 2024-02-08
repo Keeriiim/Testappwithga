@@ -24,6 +24,13 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
+
+            stage('Deliver') {
+                steps {
+                    echo 'delivering the application...'
+                    sh './jenkins/delivery.sh'
+                    echo 'deliver completed'
+                }
         }
 
 
