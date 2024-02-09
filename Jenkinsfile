@@ -29,7 +29,7 @@ pipeline {
             stage('Deliver') {
                 steps {
                     echo 'delivering the application...'
-                    sh './jenkins/delivery.sh'
+                    sh 'chmod +x ./jenkins/delivery.sh'
                     echo 'deliver completed'
                 }
         }
