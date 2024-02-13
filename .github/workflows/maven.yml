@@ -1,1 +1,6 @@
 name: MavenOne
+
+on: push
+
+#!/bin/sh
+  echo "@generated"
