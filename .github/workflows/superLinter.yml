@@ -15,4 +15,4 @@ jobs:
       env:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CUSTOM_RULES_PATH: .github/linters/checkstyle.xml
+        LINTER_RULES_PATH: .github/linters
