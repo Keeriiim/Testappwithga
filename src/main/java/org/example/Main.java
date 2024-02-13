@@ -32,7 +32,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // Print the message along with the sum of apples and oranges
-        System.out.println(String.format("%s, number %d", myMessage, add(APPLES, ORANGES)));
+        System.out.println(String.format
+                ("%s, number %d", myMessage, add(APPLES, ORANGES)));
     }
 }
 

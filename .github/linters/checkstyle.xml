@@ -1,0 +1,39 @@
+<module name="Checker">
+    <!-- Disable the JavadocPackage check -->
+    <module name="JavadocPackage">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the LineLength check -->
+    <module name="LineLength">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the HideUtilityClassConstructor check -->
+    <module name="HideUtilityClassConstructor">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the JavadocStyle check -->
+    <module name="JavadocStyle">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the StaticVariableName check -->
+    <module name="StaticVariableName">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the MagicNumber check -->
+    <module name="MagicNumber">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Disable the FinalParameters check -->
+    <module name="FinalParameters">
+        <property name="enabled" value="false"/>
+    </module>
+
+    <!-- Other Checkstyle checks that are not disabled -->
+</module>
+
