@@ -25,8 +25,7 @@ public class Main {
         return a + b;
     }
 
-    /**
-     * The main method of the program.
+    /*** The main method of the program.
      *
      * @param args The command-line arguments (not used in this program)
      */
