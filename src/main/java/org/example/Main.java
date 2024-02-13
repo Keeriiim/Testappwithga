@@ -1,3 +1,7 @@
+/**
+ * This package contains the main class of the program.
+ * The program prints a message and adds two numbers.
+ */
 package org.example;
 
 /**
@@ -9,10 +13,10 @@ public class Main {
     private static String myMessage = "Hello World!";
 
     /** The number of apples */
-    private static int APPLES = 10;
+    private static int number_of_apples = 10;
 
     /** The number of oranges */
-    private static int ORANGES = 20;
+    private static int number_of_oranges = 20;
 
     /**
      * Adds two numbers and returns the result.
@@ -21,18 +25,19 @@ public class Main {
      * @param b The second number (oranges)
      * @return The sum of the two numbers
      */
-    public static int add(int a, int b) {
+    public static int add(final int a,final int b) {
         return a + b;
     }
 
     /*** The main method of the program.
      *
      * @param args The command-line arguments (not used in this program)
-     */
+     *
+     * */
     public static void main(String[] args) {
         // Print the message along with the sum of apples and oranges
         System.out.println(String.format
-                ("%s, number %d", myMessage, add(APPLES, ORANGES)));
+                ("%s, number %d", myMessage, add(number_of_apples, number_of_oranges)));
     }
 }
 
