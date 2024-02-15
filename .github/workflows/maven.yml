@@ -33,7 +33,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: publishMaven
 
     - run: mvn -B package --file pom.xml
     - run: mvn --batch-mode --update-snapshots verify
