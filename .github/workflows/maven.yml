@@ -35,7 +35,6 @@ jobs:
         distribution: 'temurin'
         cache: publishMaven
 
-    - name: Create package
     - run: mvn -B package --file pom.xml
     - run: mvn --batch-mode --update-snapshots verify
     - run: mkdir staging && cp target/*.jar staging
